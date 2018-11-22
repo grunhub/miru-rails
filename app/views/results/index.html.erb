@@ -4,9 +4,7 @@
       <i class="fas fa-angle-left"></i>
     <% end %>
     <h3>Results</h3>
-    <%= link_to root_path, class: "nav-icon" do %>
-      <i class="fas fa-sort-amount-down"></i>
-    <% end %>
+    <i class="fas fa-sort-amount-down"></i>
   </div>
 </nav>
 <div id="hello">
@@ -23,7 +21,7 @@
                   <%= cl_image_tag(@results_with_data[result][0], class: "img") %>
                   <div class="list">
                     <div class="text">
-                      <p id="english">English Name</p>
+                      <p id="english"><%= result.food.name %></p>
                       <p><%= result.food.name %></p>
                     </div>
                     <Cart></Cart>
