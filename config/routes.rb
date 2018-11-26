@@ -7,6 +7,5 @@ Rails.application.routes.draw do
   end
   resources :results, only: [:update]
   resources :foods, only: [:index, :show]
-  resources :favourites, only: [:index, :show, :create]
 
 end
